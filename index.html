@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindMaze - Smart Quiz Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Intro Screen -->
+  <div class="intro-screen" id="introScreen">
+    <h1>Welcome to <span>MindMaze</span></h1>
+    <p>Test your knowledge and escape the maze!</p>
+    <button onclick="startGame()">Enter the Maze</button>
+  </div>
+
+  <!-- Quiz Container -->
+  <div class="quiz-container hidden" id="quizContainer">
+    <div class="question-box">
+      <h2 id="question">Question?</h2>
+      <ul id="options"></ul>
+    </div>
+    <div class="info-box">
+      <p>Level: <span id="level">1</span></p>
+      <p>Score: <span id="score">0</span></p>
+      <p>Time Left: <span id="timer">30</span>s</p>
+    </div>
+  </div>
+
+  <!-- Result Screen -->
+  <div class="result-screen hidden" id="resultScreen">
+    <h2>Maze Completed!</h2>
+    <p>Your Score: <span id="finalScore"></span></p>
+    <button onclick="location.reload()">Play Again</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
